@@ -17,7 +17,6 @@
                 "<all_urls>"
             ],
             "js": [
-                "ferramentas.js",
                 "src/aumentar_fonte/aumentar_fonte.js",
                 "src/mudar_contraste/mudar_contraste.js",
                 "src/fechar/fechar.js"
