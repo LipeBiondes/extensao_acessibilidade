@@ -49,13 +49,14 @@ body{
     text-decoration: underline;
   }
   
-  #Configuracoes_texto {
+  #Configuracoes_texto,#baseado_normas, #verificar_acessivel {
     background-color: #f2f2f2; /* Cor de fundo cinza */
     width: 400px; /* Largura da barra de rolagem */
-    height: 350px; /* Altura da barra de rolagem */
+    height: 270px; /* Altura da barra de rolagem */
   }
 
-
-  #baseado_normas, #verificar_acessivel{  
-    background-color: #f2f2f2;
+  #titulo_botao{
+    display: flex;
+    justify-content: sapce-between;
+    
   }

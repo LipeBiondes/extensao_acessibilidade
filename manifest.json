@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Acessibilidade",
     "version": "1.0",
     "description": "Uma extensão para aumentar o tamanho da fonte em todas as páginas da web.",
