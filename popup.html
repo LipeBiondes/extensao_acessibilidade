@@ -11,18 +11,26 @@
         <link rel="stylesheet" href="src/aumentar_fonte/aumentar_fonte.css">
         <link rel="stylesheet" href="src/mudar_contraste/mudar_contraste.css">
         <link rel="stylesheet" href="src/fechar/fechar.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     </head>
 </head>
 
 <body>
-    <h1>C.I.A Acessibilidade</h1>
+    <section id="titulo_botao">
+        <h1>C.I.A Acessibilidade</h1>
+        <button id="closseButton">
+            <i class="fas fa-times" alt="sair"></i>
+        </button>
+    </section>
+
     <h3>Configurações de Texto:</h3>
     <section id="Configuracoes_texto">
         <button id="aumentarFonte">Aumentar Fonte</button>
-        <button id="mudarContraste">mudar Contraste</button>
+        <button value="0" id="mudarContraste">mudar Contraste</button>
     </section>
 
-    <button id="closseButton">Fechar</button>
+
 
     <h3>baseados nas normas de acessibilidade</h3>
     <section id="baseado_normas">
