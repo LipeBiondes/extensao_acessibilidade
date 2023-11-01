@@ -1,11 +1,5 @@
-//fechar popup
-document.getElementById('closseButton').addEventListener('click', function () {
-    window.close();
-});
-
-
 //ação para aumentar a fonte
-document.getElementById('aumentarFonte').addEventListener('click', function () {
+document.getElementById('aumentarFonte').addEventListener('dblclick', function () {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         chrome.tabs.sendMessage(tabs[0].id, { action: 'aumentarFonte' });
     });
@@ -30,13 +24,3 @@ function aumentarFonte() {
         elemento.style.fontSize = (tamanhoAtual + 2) + 'px';
     }
 }
-
-//função para mudar o contraste
-document.getElementById('mudarContraste').addEventListener('dblclick', function () {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        chrome.tabs.executeScript(
-            tabs[0].id,
-            { code: 'document.body.style.filter = "invert(1)";' }
-        );
-    });
-});

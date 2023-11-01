@@ -5,23 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Extensão</title>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="src/aumentar_fonte/aumentar_fonte.css">
+        <link rel="stylesheet" href="src/mudar_contraste/mudar_contraste.css">
+        <link rel="stylesheet" href="src/fechar/fechar.css">
+    </head>
 </head>
-
 <body>
     <h1>Extensao de acessibilidade</h1>
     <p>menu de ferramentas</p>
-    <button id="closseButton">Feechar</button>
-    <button id="aumentarFonte">AumentarFonte</button>
-    <button id="mudarContraste">mudarContraste</button>
+    <button id="aumentarFonte">Aumentar Fonte</button>
+    <button id="mudarContraste">mudar Contraste</button>
+    <button id="closseButton">Fechar</button>
     <p>baseados nas normas de acessibilidade
-    <details>eMAG</details>
-    <details>WCAG</details>
+    <details><a href="http://">eMAG</a></details>
+    <details><a href="http://">WCAG</a></details>
     </p>
-
-
-    
+    <a href="https://github.com/CaioMartinss/extensao_acessibilidade">Repositorio do projeto</a>
     <script src="ferramentas.js"></script>
 
+    <script src="src/aumentar_fonte/aumentar_fonte.js"></script>
+    <script src="src/mudar_contraste/mudar_contraste.js"></script>
+    <script src="src/fechar/fechar.js"></script>
 </body>
-
 </html>

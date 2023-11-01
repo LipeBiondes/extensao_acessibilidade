@@ -1,0 +1,15 @@
+#closseButton {
+    padding: 10px 20px; /* Adicione preenchimento ao botão para melhor legibilidade e aparência */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    background-color: #ff4136; /* Cor de fundo vermelha para o botão de fechar */
+    color: #fff; /* Cor do texto no botão (branco) */
+    border: none; /* Remova a borda do botão */
+    cursor: pointer; /* Transforme o cursor em uma mão ao passar sobre o botão */
+    border-radius: 5px; /* Adicione cantos arredondados ao botão */
+    text-align: center; /* Centralize o texto no botão */
+  }
+  
+  #closseButton:hover {
+    background-color: #d52f22; /* Cor de fundo mais escura quando o mouse passa sobre o botão */
+  }
+  
