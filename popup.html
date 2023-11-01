@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Extensão</title>
+
     <head>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="src/aumentar_fonte/aumentar_fonte.css">
@@ -12,21 +13,35 @@
         <link rel="stylesheet" href="src/fechar/fechar.css">
     </head>
 </head>
+
 <body>
-    <h1>Extensao de acessibilidade</h1>
-    <p>menu de ferramentas</p>
-    <button id="aumentarFonte">Aumentar Fonte</button>
-    <button id="mudarContraste">mudar Contraste</button>
+    <h1>C.I.A Acessibilidade</h1>
+    <h3>Configurações de Texto:</h3>
+    <section id="Configuracoes_texto">
+        <button id="aumentarFonte">Aumentar Fonte</button>
+        <button id="mudarContraste">mudar Contraste</button>
+    </section>
+
     <button id="closseButton">Fechar</button>
-    <p>baseados nas normas de acessibilidade
-    <details><a href="http://">eMAG</a></details>
-    <details><a href="http://">WCAG</a></details>
-    </p>
+
+    <h3>baseados nas normas de acessibilidade</h3>
+    <section id="baseado_normas">
+        <details><a href="http://">eMAG</a></details>
+        <details><a href="http://">WCAG</a></details>
+    </section>
+
+    <h3>Como verificar se este site é acessivel?</h3>
+    <section id="verificar_acessivel">
+        <p><a href="https://asesweb.governoeletronico.gov.br/">Avaliador e Simulador de Acessibilidade em Sítios</a></p>
+        <p><a href="https://validator.w3.org/">w3c validator</a></p>
+    </section>
     <a href="https://github.com/CaioMartinss/extensao_acessibilidade">Repositorio do projeto</a>
-    <script src="ferramentas.js"></script>
+
+
 
     <script src="src/aumentar_fonte/aumentar_fonte.js"></script>
     <script src="src/mudar_contraste/mudar_contraste.js"></script>
     <script src="src/fechar/fechar.js"></script>
 </body>
+
 </html>
