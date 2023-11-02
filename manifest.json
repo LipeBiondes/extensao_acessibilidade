@@ -30,9 +30,5 @@
     ],
     "icons": {
         
-    },
-    "permissions": [
-        "activeTab",
-        "storage"
-    ]
+    }
 }
