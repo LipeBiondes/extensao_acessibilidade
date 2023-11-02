@@ -7,8 +7,7 @@
         "activeTab",
         "webNavigation",
         "storage",
-        "https://*/*",
-        "scripting"
+        "https://*/*"
     ],
     "browser_action": {
         "default_popup": "popup.html"
@@ -23,7 +22,9 @@
                 "src/mudar_contraste/mudar_contraste.js",
                 "src/fechar/fechar.js",
                 "src/cursor_maior/cursor_maior.js",
-                "src/fonte_letra/fonte_letra.js"
+                "src/fonte_letra/fonte_letra.js",
+                "src/texto_negrito/texto_negrito.js",
+                "src/texto_italico/texto_italico.js"
             ],
             "run_at": "document_end"
         }
