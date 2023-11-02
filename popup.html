@@ -10,7 +10,10 @@
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="src/aumentar_fonte/aumentar_fonte.css">
         <link rel="stylesheet" href="src/mudar_contraste/mudar_contraste.css">
+        <link rel="stylesheet" href="src/cursor_maior/cursor_maior.css">
+        <link rel="stylesheet" href="src/fonte_letra/fonte_letra.css">
         <link rel="stylesheet" href="src/fechar/fechar.css">
+
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     </head>
@@ -24,21 +27,37 @@
         </button>
     </section>
 
-    <h3>Configurações de Texto:</h3>
+    <h2>Configurações de Texto:</h2>
     <section id="Configuracoes_texto">
+        <div id="fonte_letra">
+            <h3>Fontes legiveis(compativeis com deslexia)</h3>
+            <div id="fonts-container">
+                <p style="--font-family:Arial">Arial</p>
+                <p style="--font-family:Calibri">Calibri</p>
+                <p style="--font-family:CenturyGothic">CenturyGothic</p>
+                <p style="--font-family:Comic Sans MS">ComicSans</p>
+                <p style="--font-family:Courier">Courier</p>
+                <p style="--font-family:Helvetica">Helvetica</p>
+                <p style="--font-family:Open Sans" class="">OpenSans</p>
+                <p style="--font-family:OpenDyslexic">OpenDyslexic</p>
+                <p style="--font-family:Tahoma">Tahoma</p>
+                <p style="--font-family:Verdana">Verdana</p>
+                
+            </div>
+        </div>
         <button id="aumentarFonte">Aumentar Fonte</button>
         <button value="0" id="mudarContraste">mudar Contraste</button>
+        <button id="cursor_maior">Curso maior</button>
     </section>
 
 
-
-    <h3>baseados nas normas de acessibilidade</h3>
+    <h2>Baseado nas normas de acessibilidade:</h2>
     <section id="baseado_normas">
         <details><a href="http://">eMAG</a></details>
         <details><a href="http://">WCAG</a></details>
     </section>
 
-    <h3>Como verificar se este site é acessivel?</h3>
+    <h2>Como verificar se este site é acessivel?</h2>
     <section id="verificar_acessivel">
         <p><a href="https://asesweb.governoeletronico.gov.br/">Avaliador e Simulador de Acessibilidade em Sítios</a></p>
         <p><a href="https://validator.w3.org/">w3c validator</a></p>
@@ -49,6 +68,8 @@
 
     <script src="src/aumentar_fonte/aumentar_fonte.js"></script>
     <script src="src/mudar_contraste/mudar_contraste.js"></script>
+    <script src="src/cursor_maior/cursor_maior.js"></script>
+    <script src="src/fonte_letra/fonte_letra.js"></script>
     <script src="src/fechar/fechar.js"></script>
 </body>
 

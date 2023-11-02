@@ -6,7 +6,8 @@
     "permissions": [
         "activeTab",
         "webNavigation",
-        "storage"
+        "storage",
+        "https://*/*"
     ],
     "browser_action": {
         "default_popup": "popup.html"
@@ -19,7 +20,9 @@
             "js": [
                 "src/aumentar_fonte/aumentar_fonte.js",
                 "src/mudar_contraste/mudar_contraste.js",
-                "src/fechar/fechar.js"
+                "src/fechar/fechar.js",
+                "src/cursor_maior/cursor_maior.js",
+                "src/fonte_letra/fonte_letra.js"
             ],
             "run_at": "document_end"
         }
