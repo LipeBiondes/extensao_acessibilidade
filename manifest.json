@@ -15,7 +15,8 @@
     "content_scripts": [
         {
             "matches": [
-                "<all_urls>"
+                "<all_urls>",
+                "*://*/*"
             ],
             "js": [
                 "src/aumentar_fonte/aumentar_fonte.js",

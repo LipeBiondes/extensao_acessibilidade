@@ -1,3 +1,4 @@
+
 #fonte_letra {
     text-align: center;
     padding: 10px;
@@ -15,7 +16,6 @@
   }
   
   #fonts-container p {
-    cursor: pointer;
     padding: 10px;
     margin-top: 10px; /* Adicionando margem superior de 10px */
     border: 1px solid #ccc;

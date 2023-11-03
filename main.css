@@ -1,7 +1,7 @@
 body{
     width: 400px; height: 500px;
     margin: 20px;
-    padding: 0;
+    cursor: url('assets/cursor.svg'), auto;
 }
 
   h1 {
@@ -23,7 +23,6 @@ body{
     background-color: #0074d9;
     color: #ffffff;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
   }
   
@@ -61,5 +60,4 @@ body{
   #titulo_botao{
     display: flex;
     justify-content: space-between;
-    
   }
