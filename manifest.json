@@ -1,12 +1,13 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Acessibilidade",
     "version": "1.0",
     "description": "Uma extensão para aumentar o tamanho da fonte em todas as páginas da web.",
     "permissions": [
         "activeTab",
         "webNavigation",
-        "storage"
+        "storage",
+        "https://*/*"
     ],
     "browser_action": {
         "default_popup": "popup.html"
@@ -19,16 +20,16 @@
             "js": [
                 "src/aumentar_fonte/aumentar_fonte.js",
                 "src/mudar_contraste/mudar_contraste.js",
-                "src/fechar/fechar.js"
+                "src/fechar/fechar.js",
+                "src/cursor_maior/cursor_maior.js",
+                "src/fonte_letra/fonte_letra.js",
+                "src/texto_negrito/texto_negrito.js",
+                "src/texto_italico/texto_italico.js"
             ],
             "run_at": "document_end"
         }
     ],
     "icons": {
         
-    },
-    "permissions": [
-        "activeTab",
-        "storage"
-    ]
+    }
 }

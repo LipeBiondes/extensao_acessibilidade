@@ -1,5 +1,4 @@
-#closseButton {
-    padding: 1px 20px; /* Adicione preenchimento ao botão para melhor legibilidade e aparência */
+#closseButton { /* Adicione preenchimento ao botão para melhor legibilidade e aparência */
     font-size: 16px; /* Tamanho da fonte do botão */
     background-color: #ff4136; /* Cor de fundo vermelha para o botão de fechar */
     color: #fff; /* Cor do texto no botão (branco) */

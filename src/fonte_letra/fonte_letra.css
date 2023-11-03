@@ -1,0 +1,28 @@
+#fonte_letra {
+    text-align: center;
+    padding: 10px;
+
+  }
+  
+  #fonts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduzindo o espaçamento entre as fontes */
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 10px
+  }
+  
+  #fonts-container p {
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px; /* Adicionando margem superior de 10px */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Adicionando um raio de borda de 10px */
+  }
+  
+  #fonts-container p:hover {
+    background-color: #f0f0f0;
+  }
+  

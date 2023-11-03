@@ -1,6 +1,5 @@
 body{
     width: 400px; height: 500px;
-    font-family: Arial, sans-serif;
     margin: 20px;
     padding: 0;
 }
@@ -53,10 +52,14 @@ body{
     background-color: #f2f2f2; /* Cor de fundo cinza */
     width: 400px; /* Largura da barra de rolagem */
     height: 270px; /* Altura da barra de rolagem */
+    border: 1.5px solid #ccc; /* Cor da borda */
+    overflow-y: scroll; /* Ativa a barra de rolagem vertical */
+    overflow-x: hidden; /* Desativa a barra de rolagem horizontal */
+    border-radius: 10px 10px 10px 10px;
   }
 
   #titulo_botao{
     display: flex;
-    justify-content: sapce-between;
+    justify-content: space-between;
     
   }
