@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dificuldades das Pessoas com Baixa Visão</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Dificuldades das Pessoas com Baixa Visão</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a class="smooth-scroll" href="#desafios">Desafios Comuns</a></a></li>
+        <li><a class="smooth-scroll" href="#recursos">Recursos de Acessibilidade</a></li>
+        <li> <a class="smooth-scroll" href="#conscientizacao">Conscientização e Empatia</a></li>
+        <li> <a class="smooth-scroll" href="#desenvolvedores">Desafios dos desenvolvedores</a></li>
+      </ul>
+    </nav>
+
+    <section id="desafios">
+      <article>
+        <h2>Desafios Comuns:</h2>
+        <ul>
+          <li>
+            <strong>Leitura:</strong> A leitura de textos pequenos pode ser
+            extremamente difícil, e muitas vezes é necessária uma lupa ou um
+            dispositivo de aumento de texto.
+          </li>
+          <li>
+            <strong>Mobilidade:</strong> Navegar em espaços desconhecidos pode
+            ser complicado, pois obstáculos e degraus podem não ser
+            identificados a tempo.
+          </li>
+          <li>
+            <strong>Acesso à Tecnologia:</strong> Usar dispositivos eletrônicos
+            e computadores pode ser um desafio devido ao tamanho das fontes e à
+            acessibilidade.
+          </li>
+          <li>
+            <strong>Reconhecimento de Pessoas e Objetos:</strong> Identificar
+            pessoas e objetos à distância pode ser complicado, o que pode causar
+            sentimentos de isolamento.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="recursos">
+      <article>
+        <h2>Recursos de Acessibilidade:</h2>
+        <p>
+          Felizmente, existem muitos recursos e tecnologias de acessibilidade
+          disponíveis para ajudar pessoas com baixa visão a superar esses
+          desafios. Isso inclui lentes de aumento, aplicativos de leitura de
+          texto em voz alta, software de ampliação de tela e muito mais.
+        </p>
+      </article>
+    </section>
+
+    <section id="conscientizacao">
+      <article>
+        <h2>Conscientização e Empatia:</h2>
+        <p>
+          É importante que a sociedade esteja ciente das dificuldades
+          enfrentadas por pessoas com baixa visão e demonstre empatia e apoio.
+          Isso inclui garantir que as instalações públicas sejam acessíveis e
+          que os recursos de tecnologia estejam disponíveis e sejam usados de
+          forma adequada.
+        </p>
+        <p>
+          As pessoas com baixa visão têm muito a contribuir para a sociedade, e
+          é fundamental que elas tenham a oportunidade de superar as
+          dificuldades e alcançar seu pleno potencial.
+        </p>
+      </article>
+    </section>
+
+    <section id="desenvolvedores">
+      <article>
+        <h2>Desafios dos Desenvolvedores:</h2>
+        <p>
+          Os desenvolvedores de sites e aplicativos enfrentam desafios significativos ao tentar criar experiências online acessíveis a pessoas com baixa visão. Alguns dos principais obstáculos incluem:
+        </p>
+        <ul>
+          <li>
+            <strong>Conhecimento Técnico:</strong> Muitos desenvolvedores podem não ter um amplo conhecimento em acessibilidade e design inclusivo, o que torna difícil identificar e implementar as melhores práticas.
+          </li>
+          <li>
+            <strong>Compatibilidade com Tecnologias Assistivas:</strong> Garantir que um site funcione corretamente com tecnologias assistivas, como leitores de tela, requer testes e ajustes detalhados.
+          </li>
+          <li>
+            <strong>Equilíbrio entre Estilo e Acessibilidade:</strong> Encontrar o equilíbrio entre um design visualmente atraente e a acessibilidade pode ser desafiador. Muitas vezes, mudanças de design são necessárias para atender às necessidades de baixa visão.
+          </li>
+          <li>
+            <strong>Manter-se Atualizado:</strong> As diretrizes de acessibilidade e tecnologias assistivas estão em constante evolução. Os desenvolvedores precisam acompanhar essas mudanças para manter seus projetos acessíveis.
+          </li>
+        </ul>
+        <p>
+          Apesar desses desafios, é fundamental que os desenvolvedores se esforcem para criar uma web mais inclusiva. Isso não apenas beneficia as pessoas com baixa visão, mas também amplia o alcance e o impacto de seus produtos e serviços.
+        </p>
+      </article>
+    </section>
+    
+    <script>
+      // Adicione a classe 'smooth-scroll' aos links âncora que você deseja que tenham suavização de rolagem
+      const smoothScrollLinks = document.querySelectorAll('.smooth-scroll')
+
+      smoothScrollLinks.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault()
+          const targetId = link.getAttribute('href').substring(1) // Remove o "#" do href
+          const targetElement = document.getElementById(targetId)
+
+          if (targetElement) {
+            window.scrollTo({
+              behavior: 'smooth',
+              left: 0,
+              top: targetElement.offsetTop
+            })
+          }
+        })
+      })
+    </script>
+  </body>
+</html>
