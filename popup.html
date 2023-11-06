@@ -27,7 +27,7 @@
     <section id="titulo_botao">
       <h1>VisonHelp Acessibilidade</h1>
       <button id="closseButton">
-        <i class="fas fa-times" alt="sair"></i>
+        <i class="fas fa-times" widht="22px" height="22px" alt="sair"></i>
       </button>
     </section>
 
@@ -83,12 +83,28 @@
       <div id="botoes">
         <button id="aumentarFonte">
           <span>Aumentar Fonte</span>
-          <img src="assets/icon_caixa_de_texto.svg" alt="" srcset="" />
+          <img
+            src="assets/icon_caixa_de_texto.svg"
+            alt="Aumentar fonte"
+            srcset=""
+          />
         </button>
-        <button value="0" id="mudarContraste">mudar Contraste</button>
-        <button id="cursor_maior">Cursor maior</button>
-        <button id="texto_negrito">Texto em negrito</button>
-        <button id="texto_italico">Texto em itálico</button>
+        <button value="0" id="mudarContraste">
+          <span>Mudar contraste</span>
+          <img src="assets/contrast-icon.svg" alt="mudar contraste" />
+        </button>
+        <button id="texto_negrito">
+          <span>Texto em negrito</span>
+          <img src="assets/negrito-icon.svg" alt="texto em negrito">
+        </button>
+        <button id="texto_italico">
+          <span> Texto em itálico </span>
+          <img
+            src="/assets/italico_icon.svg"
+            alt="Mudar para italico"
+            srcset=""
+          />
+        </button>
       </div>
     </section>
 
@@ -113,7 +129,6 @@
 
     <script src="src/aumentar_fonte/aumentar_fonte.js"></script>
     <script src="src/mudar_contraste/mudar_contraste.js"></script>
-    <script src="src/cursor_maior/cursor_maior.js"></script>
     <script src="src/fonte_letra/fonte_letra.js"></script>
     <script src="src/texto_negrito/texto_negrito.js"></script>
     <script src="src/texto_italico/texto_italico.js"></script>

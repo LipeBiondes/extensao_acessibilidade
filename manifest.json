@@ -14,7 +14,6 @@
         "src/aumentar_fonte/aumentar_fonte.js",
         "src/mudar_contraste/mudar_contraste.js",
         "src/fechar/fechar.js",
-        "src/cursor_maior/cursor_maior.js",
         "src/fonte_letra/fonte_letra.js",
         "src/texto_negrito/texto_negrito.js",
         "src/texto_italico/texto_italico.js"

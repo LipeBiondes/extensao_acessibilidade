@@ -13,4 +13,5 @@
 
 #aumentarFonte:hover {
   background-color: #218838; /* Cor de fundo mais escura quando o mouse passa sobre o botão */
+  cursor: pointer;
 }
