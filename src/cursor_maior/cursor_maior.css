@@ -42,3 +42,14 @@ section{
 section:hover{
   cursor: url('../../assets/cursor.svg'), auto;
 }
+
+#cursor_maior{
+  display: block;
+  margin: 5px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #191970;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}

@@ -8,6 +8,7 @@ body{
     font-size: 24px;
     margin-bottom: 10px;
   }
+
   
   p {
     font-size: 16px;
@@ -56,6 +57,15 @@ body{
     overflow-x: hidden; /* Desativa a barra de rolagem horizontal */
     border-radius: 10px 10px 10px 10px;
   }
+
+  #botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Faz com que os botões ocupem 100% da largura */
+    gap: 10px; /* Espaçamento entre os elementos, ajuste conforme necessário */
+    margin: 10px 10px;
+  }
+  
 
   #titulo_botao{
     display: flex;
