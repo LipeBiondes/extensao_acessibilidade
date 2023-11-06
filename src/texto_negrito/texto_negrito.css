@@ -1,10 +1,10 @@
-#texto_negrito{
-    display: block;
-    margin: 5px 0;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #DC143C;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+#texto_negrito {
+  display: block;
+  margin: 5px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dc143c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
 }

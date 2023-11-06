@@ -1,75 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Extensão</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="src/aumentar_fonte/aumentar_fonte.css">
-    <link rel="stylesheet" href="src/mudar_contraste/mudar_contraste.css">
-    <link rel="stylesheet" href="src/cursor_maior/cursor_maior.css">
-    <link rel="stylesheet" href="src/fonte_letra/fonte_letra.css">
-    <link rel="stylesheet" href="src/fechar/fechar.css">
-    <link rel="stylesheet" href="src/texto_negrito/texto_negrito.css">
-    <link rel="stylesheet" href="src/texto_italico/texto_italico.css">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="src/aumentar_fonte/aumentar_fonte.css" />
+    <link rel="stylesheet" href="src/mudar_contraste/mudar_contraste.css" />
+    <link rel="stylesheet" href="src/cursor_maior/cursor_maior.css" />
+    <link rel="stylesheet" href="src/fonte_letra/fonte_letra.css" />
+    <link rel="stylesheet" href="src/fechar/fechar.css" />
+    <link rel="stylesheet" href="src/texto_negrito/texto_negrito.css" />
+    <link rel="stylesheet" href="src/texto_italico/texto_italico.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Arial&family=Calibri&family=Century+Gothic&family=Comic+Sans+MS&family=Courier&family=Helvetica&family=Open+Sans&family=OpenDyslexic&family=Tahoma&family=Verdana&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arial&family=Calibri&family=Century+Gothic&family=Comic+Sans+MS&family=Courier&family=Helvetica&family=Open+Sans&family=OpenDyslexic&family=Tahoma&family=Verdana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <section id="titulo_botao">
-        <h1>VisonHelp Acessibilidade</h1>
-        <button id="closseButton">
-            <i class="fas fa-times" alt="sair"></i>
-        </button>
+      <h1>VisonHelp Acessibilidade</h1>
+      <button id="closseButton">
+        <i class="fas fa-times" alt="sair"></i>
+      </button>
     </section>
 
     <h2>Configurações de Texto:</h2>
     <section id="Configuracoes_texto">
-        <div id="fonte_letra">
-            <h2>Fontes legiveis(compativeis com deslexia)</h2>
-            <div id="fonts-container">
-                <button id="font_Arial" style="font-family: Arial, sans-serif;">Arial</button>
-                <button id="font_Calibri" style="font-family: Calibri, sans-serif;">Calibri</button>
-                <button id="font_CenturyGothic" style="font-family: Century Gothic, sans-serif;">CenturyGothic</button>
-                <button id="font_ComicSans" style="font-family: Comic Sans MS, sans-serif;">ComicSans</button>
-                <button id="font_Courier" style="font-family: Courier, sans-serif;">Courier</button>
-                <button id="font_Helvetica" style="font-family: Helvetica, sans-serif;">Helvetica</button>
-                <button id="font_OpenSans" style="font-family: Open Sans, sans-serif;">OpenSans</button>
-                <button id="font_OpenDyslexic" style="font-family: OpenDyslexic, sans-serif;">OpenDyslexic</button>
-                <button id="font_Tahoma" style="font-family: Tahoma, sans-serif;">Tahoma</button>
-                <button id="font_Verdana" style="font-family: Verdana, sans-serif;">Verdana</button>
-            </div>
+      <div id="fonte_letra">
+        <h2>Fontes legiveis(compativeis com deslexia)</h2>
+        <div id="fonts-container">
+          <button id="font_Arial" style="font-family: Arial, sans-serif">
+            Arial
+          </button>
+          <button id="font_Calibri" style="font-family: Calibri, sans-serif">
+            Calibri
+          </button>
+          <button
+            id="font_CenturyGothic"
+            style="font-family: Century Gothic, sans-serif"
+          >
+            CenturyGothic
+          </button>
+          <button
+            id="font_ComicSans"
+            style="font-family: Comic Sans MS, sans-serif"
+          >
+            ComicSans
+          </button>
+          <button id="font_Courier" style="font-family: Courier, sans-serif">
+            Courier
+          </button>
+          <button
+            id="font_Helvetica"
+            style="font-family: Helvetica, sans-serif"
+          >
+            Helvetica
+          </button>
+          <button id="font_OpenSans" style="font-family: Open Sans, sans-serif">
+            OpenSans
+          </button>
+          <button
+            id="font_OpenDyslexic"
+            style="font-family: OpenDyslexic, sans-serif"
+          >
+            OpenDyslexic
+          </button>
+          <button id="font_Tahoma" style="font-family: Tahoma, sans-serif">
+            Tahoma
+          </button>
+          <button id="font_Verdana" style="font-family: Verdana, sans-serif">
+            Verdana
+          </button>
         </div>
-        <div id="botoes">
-            <button id="aumentarFonte">Aumentar Fonte</button>
-            <button value="0" id="mudarContraste">mudar Contraste</button>
-            <button id="cursor_maior">Cursor maior</button>
-            <button id="texto_negrito">Texto em negrito</button>
-            <button id="texto_italico">Texto em itálico</button>
-        </div>
+      </div>
+      <div id="botoes">
+        <button id="aumentarFonte">
+          <span>Aumentar Fonte</span>
+          <img src="assets/icon_caixa_de_texto.svg" alt="" srcset="" />
+        </button>
+        <button value="0" id="mudarContraste">mudar Contraste</button>
+        <button id="cursor_maior">Cursor maior</button>
+        <button id="texto_negrito">Texto em negrito</button>
+        <button id="texto_italico">Texto em itálico</button>
+      </div>
     </section>
-
 
     <h2>Baseado nas normas de acessibilidade:</h2>
     <section id="baseado_normas">
-        <details><a href="http://">eMAG</a></details>
-        <details><a href="http://">WCAG</a></details>
+      <details><a href="http://">eMAG</a></details>
+      <details><a href="http://">WCAG</a></details>
     </section>
 
     <h2>Como verificar se este site é acessivel?</h2>
     <section id="verificar_acessivel">
-        <p><a href="https://asesweb.governoeletronico.gov.br/">Avaliador e Simulador de Acessibilidade em Sítios</a></p>
-        <p><a href="https://validator.w3.org/">w3c validator</a></p>
+      <p>
+        <a href="https://asesweb.governoeletronico.gov.br/"
+          >Avaliador e Simulador de Acessibilidade em Sítios</a
+        >
+      </p>
+      <p><a href="https://validator.w3.org/">w3c validator</a></p>
     </section>
-    <a href="https://github.com/CaioMartinss/extensao_acessibilidade">Repositorio do projeto</a>
-
-
+    <a href="https://github.com/CaioMartinss/extensao_acessibilidade"
+      >Repositorio do projeto</a
+    >
 
     <script src="src/aumentar_fonte/aumentar_fonte.js"></script>
     <script src="src/mudar_contraste/mudar_contraste.js"></script>
@@ -78,7 +118,5 @@
     <script src="src/texto_negrito/texto_negrito.js"></script>
     <script src="src/texto_italico/texto_italico.js"></script>
     <script src="src/fechar/fechar.js"></script>
-
-</body>
-
+  </body>
 </html>

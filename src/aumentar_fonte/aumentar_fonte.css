@@ -1,14 +1,16 @@
 #aumentarFonte {
-    padding: 10px 20px; /* Adicione preenchimento ao botão para melhor legibilidade e aparência */
-    font-size: 16px; /* Tamanho da fonte do botão */
-    background-color: #28a745; /* Cor de fundo verde para o botão de aumentar fonte */
-    color: #fff; /* Cor do texto no botão (branco) */
-    border: none; /* Remova a borda do botão */
-    border-radius: 5px; /* Adicione cantos arredondados ao botão */
-    text-align: center; /* Centralize o texto no botão */
-  }
-  
-  #aumentarFonte:hover {
-    background-color: #218838; /* Cor de fundo mais escura quando o mouse passa sobre o botão */
-  }
-  
+  display: flex;
+  font-size: 1.5em;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#aumentarFonte:hover {
+  background-color: #218838; /* Cor de fundo mais escura quando o mouse passa sobre o botão */
+}

@@ -1,38 +1,35 @@
-
 #fonte_letra {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
+}
 
-  }
-  
-  #fonts-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px; /* Reduzindo o espaçamento entre as fontes */
-    justify-content: center;
-    background-color: white;
-    border: 1px solid #000;
-    border-radius: 10px
-  }
-  
-  #fonts-container p {
-    padding: 10px;
-    margin-top: 10px; /* Adicionando margem superior de 10px */
-    border: 1px solid #ccc;
-    border-radius: 10px; /* Adicionando um raio de borda de 10px */
-  }
-  
-  #fonts-container p:hover {
-    background-color: #f0f0f0;
-  }
-  
-  #fonts-container button{
-    color: #000000;
-    margin: 5px 0;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #fffefe;
-    border: solid 1px #000000;
-    border-radius: 12px;
-  }
-  
+#fonts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Reduzindo o espaçamento entre as fontes */
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+#fonts-container p {
+  padding: 10px;
+  margin-top: 10px; /* Adicionando margem superior de 10px */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Adicionando um raio de borda de 10px */
+}
+
+#fonts-container p:hover {
+  background-color: #f0f0f0;
+}
+
+#fonts-container button {
+  color: #000000;
+  margin: 5px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fffefe;
+  border: solid 1px #000000;
+  border-radius: 12px;
+}

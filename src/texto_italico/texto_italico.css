@@ -1,10 +1,10 @@
-#texto_italico{
-    display: block;
-    margin: 5px 0;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #0074d9;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
+#texto_italico {
+  display: block;
+  margin: 5px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0074d9;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
 }
