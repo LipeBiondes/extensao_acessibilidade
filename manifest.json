@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Acessibilidade",
+  "name": "VisionHelp",
   "version": "1.0",
-  "description": "Uma extensão para aumentar o tamanho da fonte em todas as páginas da web.",
+  "description": "Uma extensão para ajudar pessoas com baixa visão",
   "permissions": ["activeTab", "webNavigation", "storage", "https://*/*"],
   "browser_action": {
     "default_popup": "popup.html"

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="src/aumentar_fonte/aumentar_fonte.css" />
     <link rel="stylesheet" href="src/mudar_contraste/mudar_contraste.css" />
-    <link rel="stylesheet" href="src/cursor_maior/cursor_maior.css" />
     <link rel="stylesheet" href="src/fonte_letra/fonte_letra.css" />
     <link rel="stylesheet" href="src/fechar/fechar.css" />
     <link rel="stylesheet" href="src/texto_negrito/texto_negrito.css" />
@@ -25,16 +24,15 @@
 
   <body>
     <section id="titulo_botao">
-      <h1>VisonHelp Acessibilidade</h1>
+      <h1>VisionHelp Acessibilidade</h1>
       <button id="closseButton">
         <i class="fas fa-times" widht="22px" height="22px" alt="sair"></i>
       </button>
     </section>
 
-    <h2>Configurações de Texto:</h2>
     <section id="Configuracoes_texto">
       <div id="fonte_letra">
-        <h2>Fontes legiveis(compativeis com deslexia)</h2>
+        <h2>Fontes legiveis (compativeis com deslexia)</h2>
         <div id="fonts-container">
           <button id="font_Arial" style="font-family: Arial, sans-serif">
             Arial
@@ -95,7 +93,7 @@
         </button>
         <button id="texto_negrito">
           <span>Texto em negrito</span>
-          <img src="assets/negrito-icon.svg" alt="texto em negrito">
+          <img src="assets/negrito-icon.svg" alt="texto em negrito" />
         </button>
         <button id="texto_italico">
           <span> Texto em itálico </span>
@@ -108,24 +106,42 @@
       </div>
     </section>
 
-    <h2>Baseado nas normas de acessibilidade:</h2>
     <section id="baseado_normas">
-      <details><a href="http://">eMAG</a></details>
+      <h2>Baseado nas normas de acessibilidade</h2>
+      <details>
+        <a href="https://emag.governoeletronico.gov.br/">eMAG</a>
+      </details>
       <details><a href="http://">WCAG</a></details>
     </section>
 
-    <h2>Como verificar se este site é acessivel?</h2>
     <section id="verificar_acessivel">
+      <h2>Como verificar se este site é acessivel?</h2>
       <p>
-        <a href="https://asesweb.governoeletronico.gov.br/"
-          >Avaliador e Simulador de Acessibilidade em Sítios</a
+        <a
+          href="https://asesweb.governoeletronico.gov.br/"
+          target="_blank"
+          alt="link para o site do eMAG"
         >
+          Avaliador e Simulador de Acessibilidade em Sítios
+        </a>
       </p>
-      <p><a href="https://validator.w3.org/">w3c validator</a></p>
+      <p>
+        <a
+          href="https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/"
+          target="_blank"
+          alt="link para o site do WCAG"
+        >
+          w3c validator
+        </a>
+      </p>
     </section>
-    <a href="https://github.com/CaioMartinss/extensao_acessibilidade"
-      >Repositorio do projeto</a
-    >
+    <p id="link_repositorio">
+      <a
+        href="https://github.com/CaioMartinss/extensao_acessibilidade"
+        target="_blank"
+        >Repositorio do projeto</a
+      >
+    </p>
 
     <script src="src/aumentar_fonte/aumentar_fonte.js"></script>
     <script src="src/mudar_contraste/mudar_contraste.js"></script>
