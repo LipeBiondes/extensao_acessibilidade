@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 body {
   width: auto;
   height: auto;
   cursor: url('assets/cursor.svg'), auto;
   margin: 20px;
+  font-family: 'Roboto Slab', serif;
   background: linear-gradient(to bottom, #306eda, #007fff);
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,9 +86,11 @@ a:hover {
 }
 
 #titulo_botao {
+  border-radius: 10px;
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: stretch;
   align-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -93,6 +99,16 @@ a:hover {
 section {
   margin-top: 22px;
   padding: 12px;
+  box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.1),
+    0px 5px 10px 0px rgba(56, 32, 32, 0.1);
+}
+
+section h2 {
+  text-align: center;
+}
+
+section h3 {
+  text-align: center;
 }
 
 p#link_repositorio a {
