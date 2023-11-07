@@ -16,7 +16,9 @@ const botoes = [
   'aumentarFonte',
   'mudarContraste',
   'texto_negrito',
-  'texto_italico'
+  'texto_italico',
+  'eMAG',
+  'WCAG'
 ]
 
 NewVoices()
