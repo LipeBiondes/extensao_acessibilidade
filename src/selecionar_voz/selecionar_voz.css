@@ -1,0 +1,14 @@
+#selecionar-voz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
+#selecionar-voz select {
+  width: 200px;
+  border-radius: 22px;
+  cursor: pointer;
+  margin-left: 10px;
+}

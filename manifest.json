@@ -3,7 +3,13 @@
   "name": "VisionHelp",
   "version": "1.0",
   "description": "Uma extensão para ajudar pessoas com baixa visão",
-  "permissions": ["activeTab", "webNavigation", "storage", "https://*/*"],
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "storage",
+    "https://*/*",
+    "tts"
+  ],
   "browser_action": {
     "default_popup": "popup.html"
   },
@@ -16,7 +22,8 @@
         "src/fechar/fechar.js",
         "src/fonte_letra/fonte_letra.js",
         "src/texto_negrito/texto_negrito.js",
-        "src/texto_italico/texto_italico.js"
+        "src/texto_italico/texto_italico.js",
+        "src/selecionar_voz/selecionar_voz.js"
       ],
       "run_at": "document_end"
     }

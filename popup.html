@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="src/fechar/fechar.css" />
     <link rel="stylesheet" href="src/texto_negrito/texto_negrito.css" />
     <link rel="stylesheet" href="src/texto_italico/texto_italico.css" />
+    <link rel="stylesheet" href="src/selecionar_voz/selecionar_voz.css" />
 
     <link
       rel="stylesheet"
@@ -32,6 +33,11 @@
 
     <section id="Configuracoes_texto">
       <h2>Configurações de texto</h2>
+      <div id="selecionar-voz">
+        <p>Selecionar Voz</p>
+        <select name="" id="voiceList"></select>
+      </div>
+
       <div id="fonte_letra">
         <h3>Fontes legiveis (compativeis com deslexia)</h3>
         <div id="fonts-container">
@@ -82,13 +88,9 @@
       <div id="botoes">
         <button id="aumentarFonte">
           <span>Aumentar Fonte</span>
-          <img
-            src="assets/icon_caixa_de_texto.svg"
-            alt="Aumentar fonte"
-            srcset=""
-          />
+          <img src="assets/icon_caixa_de_texto.svg" alt="Aumentar fonte" />
         </button>
-        <button value="0" id="mudarContraste">
+        <button id="mudarContraste">
           <span>Mudar contraste</span>
           <img src="assets/contrast-icon.svg" alt="mudar contraste" />
         </button>
@@ -98,11 +100,7 @@
         </button>
         <button id="texto_italico">
           <span> Texto em itálico </span>
-          <img
-            src="/assets/italico_icon.svg"
-            alt="Mudar para italico"
-            srcset=""
-          />
+          <img src="/assets/italico_icon.svg" alt="Mudar para italico" />
         </button>
       </div>
     </section>
@@ -167,5 +165,6 @@
     <script src="src/texto_negrito/texto_negrito.js"></script>
     <script src="src/texto_italico/texto_italico.js"></script>
     <script src="src/fechar/fechar.js"></script>
+    <script src="src/selecionar_voz/selecionar_voz.js"></script>
   </body>
 </html>
