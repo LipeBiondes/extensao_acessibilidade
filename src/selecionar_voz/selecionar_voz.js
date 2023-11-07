@@ -1,5 +1,7 @@
 const voiceList = document.querySelector('#voiceList')
 const synth = window.speechSynthesis
+const inputTxt = document.querySelector('#texto_a_ser_lido')
+const btnLer = document.querySelector('#ler-texto')
 let voices = []
 
 const botoes = [
@@ -26,6 +28,25 @@ NewVoices()
 if (speechSynthesis.onvoiceschanged !== undefined) {
   speechSynthesis.onvoiceschanged = NewVoices
 }
+
+btnLer.addEventListener('click', () => {
+  let toSpeak = ''
+
+  if (inputTxt.value === '') {
+    toSpeak = new SpeechSynthesisUtterance('Por favor, digite um texto')
+  } else {
+    toSpeak = new SpeechSynthesisUtterance(inputTxt.value)
+  }
+
+  const selectedVoiceName =
+    voiceList.selectedOptions[0].getAttribute('data-name')
+  voices.forEach(voice => {
+    if (voice.name === selectedVoiceName) {
+      toSpeak.voice = voice
+    }
+  })
+  synth.speak(toSpeak)
+})
 
 function speakOnClickButton(buttonId) {
   const button = document.querySelector(`#${buttonId}`)

@@ -33,10 +33,23 @@
 
     <section id="Configuracoes_texto">
       <h2>Configurações de texto</h2>
-      <div id="selecionar-voz">
-        <p>Selecionar Voz</p>
-        <select name="" id="voiceList"></select>
-      </div>
+
+      <section id="section-selecionar-voz">
+        <h2>Ler textos</h2>
+        <div id="selecionar-voz">
+          <p>Selecionar Voz</p>
+          <select name="" id="voiceList"></select>
+          <input
+            type="text"
+            name="texto_a_ser_lido"
+            id="texto_a_ser_lido"
+            placeholder="Cole o texto aqui"
+          />
+          <button type="button" id="ler-texto">
+            Ler <img src="/assets/speak_icon.svg" alt="" />
+          </button>
+        </div>
+      </section>
 
       <div id="fonte_letra">
         <h3>Fontes legiveis (compativeis com dislexia)</h3>

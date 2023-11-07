@@ -97,12 +97,17 @@ a:hover {
 }
 
 section {
-  margin-top: 22px;
+  margin-top: 16px;
   padding: 12px;
   box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.1),
     0px 5px 10px 0px rgba(56, 32, 32, 0.1);
 }
 
+#section-selecionar-id {
+  margin-top: 22px;
+  padding: 12px;
+  margin-bottom: 22px;
+}
 section h2 {
   text-align: center;
 }
