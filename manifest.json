@@ -1,35 +1,36 @@
 {
-    "manifest_version": 2,
-    "name": "Acessibilidade",
-    "version": "1.0",
-    "description": "Uma extensão para aumentar o tamanho da fonte em todas as páginas da web.",
-    "permissions": [
-        "activeTab",
-        "webNavigation",
-        "storage",
-        "https://*/*"
-    ],
-    "browser_action": {
-        "default_popup": "popup.html"
-    },
-    "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "src/aumentar_fonte/aumentar_fonte.js",
-                "src/mudar_contraste/mudar_contraste.js",
-                "src/fechar/fechar.js",
-                "src/cursor_maior/cursor_maior.js",
-                "src/fonte_letra/fonte_letra.js",
-                "src/texto_negrito/texto_negrito.js",
-                "src/texto_italico/texto_italico.js"
-            ],
-            "run_at": "document_end"
-        }
-    ],
-    "icons": {
-        
+  "manifest_version": 2,
+  "name": "VisionHelp",
+  "version": "1.0",
+  "description": "Uma extensão para ajudar pessoas com baixa visão",
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "storage",
+    "https://*/*",
+    "tts"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>", "*://*/*"],
+      "js": [
+        "src/aumentar_fonte/aumentar_fonte.js",
+        "src/mudar_contraste/mudar_contraste.js",
+        "src/fechar/fechar.js",
+        "src/fonte_letra/fonte_letra.js",
+        "src/texto_negrito/texto_negrito.js",
+        "src/texto_italico/texto_italico.js",
+        "src/selecionar_voz/selecionar_voz.js"
+      ],
+      "run_at": "document_end"
     }
+  ],
+  "icons": {
+    "16": "icons/olho16.png",
+    "48": "icons/olho48.png",
+    "128": "icons/olho128.png"
+  }
 }

@@ -1,83 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Extensão</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="src/aumentar_fonte/aumentar_fonte.css" />
+    <link rel="stylesheet" href="src/mudar_contraste/mudar_contraste.css" />
+    <link rel="stylesheet" href="src/fonte_letra/fonte_letra.css" />
+    <link rel="stylesheet" href="src/fechar/fechar.css" />
+    <link rel="stylesheet" href="src/texto_negrito/texto_negrito.css" />
+    <link rel="stylesheet" href="src/texto_italico/texto_italico.css" />
+    <link rel="stylesheet" href="src/selecionar_voz/selecionar_voz.css" />
 
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="src/aumentar_fonte/aumentar_fonte.css">
-        <link rel="stylesheet" href="src/mudar_contraste/mudar_contraste.css">
-        <link rel="stylesheet" href="src/cursor_maior/cursor_maior.css">
-        <link rel="stylesheet" href="src/fonte_letra/fonte_letra.css">
-        <link rel="stylesheet" href="src/fechar/fechar.css">
-        <link rel="stylesheet" href="src/texto_negrito/texto_negrito.css">
-        <link rel="stylesheet" href="src/texto_italico/texto_italico.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arial&family=Calibri&family=Century+Gothic&family=Comic+Sans+MS&family=Courier&family=Helvetica&family=Open+Sans&family=OpenDyslexic&family=Tahoma&family=Verdana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    
-</head>
-
-<body>
+  <body>
     <section id="titulo_botao">
-        <h1>VisonHelp Acessibilidade</h1>
-        <button id="closseButton">
-            <i class="fas fa-times" alt="sair"></i>
-        </button>
+      <h1>VisionHelp Acessibilidade</h1>
+      <button id="closseButton">
+        <i class="fas fa-times" widht="22px" height="22px" alt="sair"></i>
+      </button>
     </section>
 
-    <h2>Configurações de Texto:</h2>
     <section id="Configuracoes_texto">
-        <div id="fonte_letra">
-            <h3>Fontes legiveis(compativeis com deslexia)</h3>
-            <div id="fonts-container">
-                <p style="--font-family:Arial">Arial</p>
-                <p style="--font-family:Calibri">Calibri</p>
-                <p style="--font-family:CenturyGothic">CenturyGothic</p>
-                <p style="--font-family:Comic Sans MS">ComicSans</p>
-                <p style="--font-family:Courier">Courier</p>
-                <p style="--font-family:Helvetica">Helvetica</p>
-                <p style="--font-family:Open Sans" class="">OpenSans</p>
-                <p style="--font-family:OpenDyslexic">OpenDyslexic</p>
-                <p style="--font-family:Tahoma">Tahoma</p>
-                <p style="--font-family:Verdana">Verdana</p>
-                
-            </div>
+      <h2>Configurações de texto</h2>
+
+      <section id="section-selecionar-voz">
+        <h2>Ler textos</h2>
+        <div id="selecionar-voz">
+          <p>Selecionar Voz</p>
+          <select name="" id="voiceList"></select>
+          <input
+            type="text"
+            name="texto_a_ser_lido"
+            id="texto_a_ser_lido"
+            placeholder="Cole o texto aqui"
+          />
+          <button type="button" id="ler-texto">
+            Ler <img src="/assets/speak_icon.svg" alt="" />
+          </button>
         </div>
-        <button id="aumentarFonte">Aumentar Fonte</button>
-        <button value="0" id="mudarContraste">mudar Contraste</button>
-        <button id="cursor_maior">Curso maior</button>
-        <button id="texto_negrito">Texto em negrito</button>
-        <button id="texto_italico">Texto em itálico</button>
+      </section>
+
+      <div id="fonte_letra">
+        <h3>Fontes legiveis (compativeis com dislexia)</h3>
+        <div id="fonts-container">
+          <button id="font_Arial" style="font-family: Arial, sans-serif">
+            Arial
+          </button>
+          <button id="font_Calibri" style="font-family: Calibri, sans-serif">
+            Calibri
+          </button>
+          <button
+            id="font_CenturyGothic"
+            style="font-family: Century Gothic, sans-serif"
+          >
+            CenturyGothic
+          </button>
+          <button
+            id="font_ComicSans"
+            style="font-family: Comic Sans MS, sans-serif"
+          >
+            ComicSans
+          </button>
+          <button id="font_Courier" style="font-family: Courier, sans-serif">
+            Courier
+          </button>
+          <button
+            id="font_Helvetica"
+            style="font-family: Helvetica, sans-serif"
+          >
+            Helvetica
+          </button>
+          <button id="font_OpenSans" style="font-family: Open Sans, sans-serif">
+            OpenSans
+          </button>
+          <button
+            id="font_OpenDyslexic"
+            style="font-family: OpenDyslexic, sans-serif"
+          >
+            OpenDyslexic
+          </button>
+          <button id="font_Tahoma" style="font-family: Tahoma, sans-serif">
+            Tahoma
+          </button>
+          <button id="font_Verdana" style="font-family: Verdana, sans-serif">
+            Verdana
+          </button>
+        </div>
+      </div>
+      <div id="botoes">
+        <button id="aumentarFonte">
+          <span>Aumentar Fonte</span>
+          <img src="assets/icon_caixa_de_texto.svg" alt="Aumentar fonte" />
+        </button>
+        <button id="mudarContraste">
+          <span>Mudar contraste</span>
+          <img src="assets/contrast-icon.svg" alt="mudar contraste" />
+        </button>
+        <button id="texto_negrito">
+          <span>Texto em negrito</span>
+          <img src="assets/negrito-icon.svg" alt="texto em negrito" />
+        </button>
+        <button id="texto_italico">
+          <span> Texto em itálico </span>
+          <img src="/assets/italico_icon.svg" alt="Mudar para italico" />
+        </button>
+      </div>
     </section>
 
-
-    <h2>Baseado nas normas de acessibilidade:</h2>
     <section id="baseado_normas">
-        <details><a href="http://">eMAG</a></details>
-        <details><a href="http://">WCAG</a></details>
+      <h2>Baseado nas normas de acessibilidade</h2>
+      <details id="eMAG">
+        <p>
+          <a
+            href="https://emag.governoeletronico.gov.br/"
+            target="_blank"
+            alt="link para o site do eMAG"
+            >eMAG</a
+          >
+        </p>
+      </details>
+      <details id="WCAG">
+        <a
+          href="https://www.w3c.br/traducoes/wcag/wcag21-pt-BR/"
+          target="_blank"
+          alt="link para o site do WCAG"
+          >WCAG</a
+        >
+      </details>
     </section>
 
-    <h2>Como verificar se este site é acessivel?</h2>
     <section id="verificar_acessivel">
-        <p><a href="https://asesweb.governoeletronico.gov.br/">Avaliador e Simulador de Acessibilidade em Sítios</a></p>
-        <p><a href="https://validator.w3.org/">w3c validator</a></p>
+      <h2>Como verificar se este site é acessivel?</h2>
+
+      <ul>
+        <li>
+          <p>
+            <a href="https://asesweb.governoeletronico.gov.br/" target="_blank">
+              Avaliador e Simulador de Acessibilidade em Sítios
+            </a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a
+              href="https://validator.w3.org/"
+              target="_blank"
+              alt="link para o avaliador w3c validator"
+            >
+              w3c validator
+            </a>
+          </p>
+        </li>
+      </ul>
     </section>
-    <a href="https://github.com/CaioMartinss/extensao_acessibilidade">Repositorio do projeto</a>
-
-
+    <p id="link_repositorio">
+      <a
+        href="https://github.com/CaioMartinss/extensao_acessibilidade"
+        target="_blank"
+        >Repositorio do projeto</a
+      >
+    </p>
 
     <script src="src/aumentar_fonte/aumentar_fonte.js"></script>
     <script src="src/mudar_contraste/mudar_contraste.js"></script>
-    <script src="src/cursor_maior/cursor_maior.js"></script>
     <script src="src/fonte_letra/fonte_letra.js"></script>
     <script src="src/texto_negrito/texto_negrito.js"></script>
     <script src="src/texto_italico/texto_italico.js"></script>
     <script src="src/fechar/fechar.js"></script>
-
-</body>
-
+    <script src="src/selecionar_voz/selecionar_voz.js"></script>
+  </body>
 </html>
-
